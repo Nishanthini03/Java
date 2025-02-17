@@ -1,13 +1,22 @@
 public class Main {
   public static void main(String[] args) {
-    System.out.println("This ïs  for loop");
+
+    System.out.println("This is  for loop");
     int i=1;
     for(i; i<11; i++) {
        System.out.println("This is " + i + "th iteration.");
     }
-    System.out.println("This ïs  while loop"); 
+
+    System.out.println("This is  while loop"); 
     while(i<10){
       System.out.println(i);
+      i++
     }
+
+   System.out.println("This is do-while loop");
+   do{
+     System.out.println(i);
+     i++;
+   }while( i<=10 );
   }
 }
