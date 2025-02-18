@@ -1,0 +1,12 @@
+class Conditional_Statements {
+  public static void main (String args[]) {
+    System.out.println("This is if_else statement");
+    int year = 17;
+    if(year<18){
+      System.out.println("You are not allowed to come for a party");
+    } 
+    else{
+      System.out.println("You are allowed to come for a party");
+    }
+  }  
+} 
