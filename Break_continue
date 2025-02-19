@@ -1,0 +1,16 @@
+class Break_continue{
+  public static void main(String args[]){
+    System.out.println("This code for Continue");
+    for(int i = 1; i < 10; i++){
+      if(i==3)
+        continue; // I fi is 3, then i won't be printed and continue next iteration.
+      System.out.println(i);
+    }
+     System.out.println("This code for Continue");
+     for(int i = 1; i < 10; i++){
+       if(i==7)
+         break;  //If i is 7, then it will break the loop
+       System.out.println(i);
+    }
+  }
+}
