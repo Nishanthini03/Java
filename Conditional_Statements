@@ -11,30 +11,30 @@ class Conditional_Statements {
 
     System.out.println("This is switch_case statement");
     String day = "Monday";
-    switch(day){
-     case1(day.equal("Monday")):
+    switch(day) {
+      case "Monday":
         System.out.println("It is Monday.");
-        return;
-     case2(day.equal("Tuesday")):
+        break;
+      case "Tuesday":
         System.out.println("It is Tuesday.");
-        return;
-     case3(day.equal("Wednesday")):
+        break;
+      case "Wednesday":
         System.out.println("It is Wednesday.");
-        return;
-     case4(day.equal("Thursday")):
+        break;
+      case "Thursday":
         System.out.println("It is Thursday.");
-        return;
-     case5(day.equal("Friday")):
+        break;
+      case "Friday":
         System.out.println("It is Friday.");
-        return;
-     case6(day.equal("Saturday")):
+        break;
+      case "Saturday":
         System.out.println("It is Saturday.");
-        return;
-     case7(day.equal("Sunday")):
+        break;
+      case "Sunday":
         System.out.println("It is Sunday.");
-        return;
-     default:
+        break;
+      default:
         System.out.println("Day is incorrect.");
-    } 
+    }
   }  
 } 
