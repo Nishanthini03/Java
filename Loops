@@ -10,7 +10,7 @@ public class Main {
     System.out.println("This is  while loop"); 
     while(i<10){
       System.out.println(i);
-      i++
+      i++;
     }
 
    System.out.println("This is do-while loop");
