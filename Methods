@@ -17,11 +17,17 @@ class Methods{
     return a + b;
   }
 
+  public void showMessage() {
+        System.out.println("This is an instance method.");
+    }
+
   public static void main(String args[]){
     System.out.println("This is java method");
     Print("Nisha");
     checkAge(12);
     checkAge(34);
     System.out.println(addNumbers(5,6));
+    Methods obj = new Methods();
+    obj.showMessage(); // Called using an object
   }
 }
