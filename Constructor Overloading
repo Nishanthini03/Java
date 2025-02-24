@@ -1,0 +1,28 @@
+class Car {
+    String brand;
+    int year;
+
+    // Constructor 1
+    Car() {
+        brand = "Unknown";
+        year = 0;
+    }
+
+    // Constructor 2 (Overloaded)
+    Car(String b, int y) {
+        brand = b;
+        year = y;
+    }
+
+    void display() {
+        System.out.println("Car Brand: " + brand + ", Year: " + year);
+    }
+
+    public static void main(String[] args) {
+        Car car1 = new Car();
+        Car car2 = new Car("Honda", 2023);
+        
+        car1.display();
+        car2.display();
+    }
+}
