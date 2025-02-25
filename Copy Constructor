@@ -1,0 +1,25 @@
+class Car {
+    String brand;
+
+    // Parameterized constructor
+    Car(String b) {
+        brand = b;
+    }
+
+    // Copy constructor
+    Car(Car obj) {
+        brand = obj.brand;
+    }
+
+    void display() {
+        System.out.println("Car Brand: " + brand);
+    }
+
+    public static void main(String[] args) {
+        Car car1 = new Car("Ford");
+        Car car2 = new Car(car1); // Copying car1 properties to car2
+
+        car1.display();
+        car2.display();
+    }
+}
