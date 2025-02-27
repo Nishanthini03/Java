@@ -1,0 +1,28 @@
+// Defining a class
+class Car {
+    // Attributes (variables)
+    String brand;
+    int year;
+
+    // Method to display details
+    void display() {
+        System.out.println("Car Brand: " + brand);
+        System.out.println("Manufacturing Year: " + year);
+    }
+}
+
+// Main class to run the program
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of Car class
+        Car myCar = new Car();
+
+        // Assigning values to the object
+        myCar.brand = "Toyota";
+        myCar.year = 2022;
+
+        // Calling the method
+        myCar.display();
+    }
+}
+ 
