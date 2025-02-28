@@ -1,11 +1,15 @@
 import java.util.Scanner;
 
-class Input_Output{
-  public static void main(String args[]){
-    Scanner input = new Scanner(System.in);
-    System.out.prinlnt("Enter your name ");
-    String name = input.nextLine();
-    System.out.println("Enterned name is " + name);
-  }
-  
+class InputOutput {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); // Create Scanner object
+
+        System.out.println("Enter your name: ");
+        String name = input.nextLine(); // Read user input
+
+        System.out.println("Entered name is: " + name); // Display output
+
+        input.close(); // Close the Scanner to prevent resource leaks
+    }
 }
+
