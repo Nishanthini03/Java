@@ -1,0 +1,28 @@
+// Abstract class
+abstract class Vehicle {
+    abstract void start(); // Abstract method
+}
+
+// Subclass 1
+class Car extends Vehicle {
+    void start() {
+        System.out.println("Car starts with a key.");
+    }
+}
+
+// Subclass 2
+class Bike extends Vehicle {
+    void start() {
+        System.out.println("Bike starts with a button.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle car = new Car();
+        car.start(); // Output: Car starts with a key.
+
+        Vehicle bike = new Bike();
+        bike.start(); // Output: Bike starts with a button.
+    }
+}
