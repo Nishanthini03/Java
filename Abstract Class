@@ -1,0 +1,26 @@
+abstract class Animal {
+    // Abstract method (no implementation)
+    abstract void makeSound();
+
+    // Concrete method (with implementation)
+    void sleep() {
+        System.out.println("Sleeping...");
+    }
+}
+
+// Subclass (Child class)
+class Dog extends Animal {
+    // Implementing abstract method
+    void makeSound() {
+        System.out.println("Bark! Bark!");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.makeSound(); // Calls the overridden method
+        myDog.sleep();     // Calls the concrete method from the abstract class
+    }
+}
