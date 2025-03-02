@@ -1,0 +1,44 @@
+class Person {
+    // Private variables (data hiding)
+    private String name;
+    private int age;
+
+    // Getter method for name
+    public String getName() {
+        return name;
+    }
+
+    // Setter method for name
+    public void setName(String newName) {
+        name = newName;
+    }
+
+    // Getter method for age
+    public int getAge() {
+        return age;
+    }
+
+    // Setter method for age
+    public void setAge(int newAge) {
+        if (newAge > 0) { // Adding validation
+            age = newAge;
+        } else {
+            System.out.println("Age must be positive!");
+        }
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        Person p = new Person();
+
+        // Setting values using setter methods
+        p.setName("Alice");
+        p.setAge(25);
+
+        // Accessing values using getter methods
+        System.out.println("Name: " + p.getName());
+        System.out.println("Age: " + p.getAge());
+    }
+}
